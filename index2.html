@@ -1,77 +1,69 @@
 <!DOCTYPE html>
-<html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
   <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <nav class="nav-extended">
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <meta name="author" content="Bud Gidiere">
+  <meta name="description" content="This is a cool web site with some things">
+  <meta name="keywords" content="cool,things">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  <!-- Load Custom CSS Style Sheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Adding Some icons -->
+  <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- Google Sans Font -->
+  <link rel="stylesheet" href="/css/sans.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <head>
+      <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><a href="#test1">Test 1</a></li>
-            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-            <li class="tab"><a href="#test4">Test 4</a></li>
+          <a href="#!" class="brand-logo"><i class="mdi mdi-atom mdi-36px"></i>Atom-Gram</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href=""><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
           </ul>
         </div>
       </nav>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-  </head>
-
-  <body>
-    <div class="scroll">
-    <div class="row valign-wrapper">
-      <div class="card col s10 offset-s1 valign" style="background-color:#E6E6E6">
-        <div class="view overlay hm-white-slight">
-          <div class="mask"></div>
-        </div>
-        <div class="card-body" >
-          <h4 class="card-text" style="font-size: 24px"><strong>Website Card</strong></h4>
-          <p class="card-footer:last-child" style="text-align: left; font-size: 16px; color: #39393A; background-color: #E6E6E6">
-            <img class="responsive-img" src=# alt=""><br>
-            Some Text
-          </p>
-          <p class="card-footer:last-child" style="text-align: right; font-size: 16px">8.29.2018</p>
+    </head>
+    <div class="row card-fitpage center-align" style="width:500px">
+      <div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.fireside.fm/podcasts/images/b/bc7f1faf-8aad-4135-bb12-83a8af679756/cover_small.jpg" style="width:500px; height:500px">
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">account-outline</i></a>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="scroll">
-    <div class="row valign-wrapper center-align">
-      <div class="card col s10 offset-s1 l5 offset-l4 valign" style="width:30rem;">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/meme1.jpg" style="width:400px;height:400px;">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</center>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!-- <h1>Hi this is my site</h1>
+      <h2>My Favorite Place to Vacaion</h4>
+      <h4>My Favroite Place to Vacaion is my room because playing on my computer is fun!</h4>
+      <h2>My Favorite Sports Team</h2>
+      <h4>My Favorite Sports Team is {null} Because i dont watch sports.</h4>
+      <h2>My Favroite Video Game</h2>
+      <h4>My Favroite Video Game is Fallout 4 because it is fun</h4>
+      <h2>My Favroite thing about Birmingham</h2>
+      <h5>{null}</h5>
+      <! -->
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
